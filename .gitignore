@@ -24,5 +24,6 @@ _testmain.go
 *.prof
 include
 libv8
+data
 v8/build/.gclient
 v8/build/.gclient_entries
