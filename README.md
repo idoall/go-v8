@@ -28,12 +28,14 @@ mkdir data && cd data
 # Download the gem
 # MacOS Sierra is darwin-16, for v8 6.3.292.48.1 it looks like:
 curl https://rubygems.org/downloads/libv8-6.3.292.48.1-x86_64-darwin-16.gem > libv8.gem
+# linux url:https://rubygems.org/downloads/libv8-6.3.292.48.1-x86_64-linux.gem
 
 # Extract the gem (it's a tarball)
-tar -xf libv8.gem
+# Extract the `data.tar.gz` within
+tar -xf libv8.gem && tar -xzf data.tar.gz
 
 # Extract the `data.tar.gz` within
-tar -xzf data.tar.gz
+
 
 # Symlink the compiled libraries and includes
 ln -s `go env GOPATH`/src/github.com/idoall/v8/data/vendor/v8/include $GOPATH/src/github.com/idoall/v8/include
