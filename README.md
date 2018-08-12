@@ -28,7 +28,8 @@ mkdir data && cd data
 # Download the gem
 # MacOS Sierra is darwin-16, for v8 6.3.292.48.1 it looks like:
 curl https://rubygems.org/downloads/libv8-6.3.292.48.1-x86_64-darwin-16.gem > libv8.gem
-# linux url:https://rubygems.org/downloads/libv8-6.3.292.48.1-x86_64-linux.gem
+# linux 
+curl https://rubygems.org/downloads/libv8-6.3.292.48.1-x86_64-linux.gem > libv8.gem
 
 # Extract the gem (it's a tarball)
 # Extract the `data.tar.gz` within
